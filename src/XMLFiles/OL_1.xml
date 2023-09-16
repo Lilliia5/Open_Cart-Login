@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="OL-1 Validate logging into the Application without providing any credentials">
+        <parameter name="alertText" value="Warning: No match for E-Mail Address and/or Password."></parameter>
+        <parameter name="browserName" value="firefox"></parameter>
+        <classes>
+            <class name="Tests.OL_1"></class>
+        </classes>
+    </test>
+</suite>
