@@ -17,12 +17,26 @@ public class Login_Page_POM {
     public WebElement myAccountDropDownMenu;
 
     @FindBy(css = "a[href*='/login']")
-    public WebElement loginButton;
+    public WebElement loginOptionOnDropDownMenu;
 
     @FindBy(id = "input-email")
     public WebElement emailField;
     @FindBy(id = "input-password")
     public WebElement passwordField;
+
+    @FindBy(css = "input[value='Login']")
+    public WebElement loginButton;
+
+    @FindBy(css = "div[class*='alert-danger']")
+    public WebElement alertDangerMessage;
+
+    @FindBy(css = "a[href*='/register']")
+    public WebElement registerOptionOnDropDownMenu;
+
+    @FindBy(css = "div[id='content']>p>a")
+    public WebElement loginPageLinkOnRegisterPage;
+    @FindBy(css = "div[class='list-group']>a[href*='/login']")
+    public WebElement loginOptionOnRighColumn;
 
 
 }
