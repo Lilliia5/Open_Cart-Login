@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="OL_03 Validate logging into the Application using invalid email address and valid Password">
+        <parameter name="browserName" value="firefox"></parameter>
+        <parameter name="email" value="xyzabc123@gmail.com"></parameter>
+        <parameter name="password" value="12345"></parameter>
+        <parameter name="alertMessage" value="Warning: No match for E-Mail Address and/or Password."></parameter>
+        
+        <classes>
+            <class name="Tests.OL_03"></class>
+
+        </classes>
+
+
+    </test>
+</suite>

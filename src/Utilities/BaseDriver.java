@@ -57,5 +57,13 @@ public class BaseDriver {
          driver.quit();
     }
 
+    public void wait_time(int seconds) {
+        try {
+            Thread.sleep(seconds* 1000L);
+        } catch (InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
 
 }
