@@ -38,5 +38,8 @@ public class Login_Page_POM {
     @FindBy(css = "div[class='list-group']>a[href*='/login']")
     public WebElement loginOptionOnRighColumn;
 
+    @FindBy(css = "div[class=\"alert alert-danger alert-dismissible\"]")
+    public WebElement alertMessage;
+
 
 }
