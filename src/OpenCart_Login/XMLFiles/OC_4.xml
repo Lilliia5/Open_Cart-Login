@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Validate logging into the Application using valid email address and invalid Password">
+            <parameter name="warningMessage" value="Warning: No match for E-Mail Address and/or Password."></parameter>
+            <parameter name="browserName" value="firefox"></parameter>
+        <classes>
+            <class name="OpenCart_Login.OC_04"></class>
+        </classes>
+    </test>
+</suite>
