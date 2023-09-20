@@ -19,6 +19,9 @@ public class Login_Page_POM {
     @FindBy(css = "a[href*='/login']")
     public WebElement loginOptionOnDropDownMenu;
 
+    @FindBy(css = "a[href*='/logout']")
+    public WebElement logoutOptionOnDropDownMenu;
+
     @FindBy(id = "input-email")
     public WebElement emailField;
     @FindBy(id = "input-password")
@@ -38,8 +41,14 @@ public class Login_Page_POM {
     @FindBy(css = "div[class='list-group']>a[href*='/login']")
     public WebElement loginOptionOnRighColumn;
 
+    @FindBy(css = "div[class='list-group']>a[href*='/account']")
+    public WebElement myAccountButtonOnRightColumn;
+
     @FindBy(css = "div[class=\"alert alert-danger alert-dismissible\"]")
     public WebElement alertMessage;
+
+    @FindBy(xpath = "//a[text()='Continue']")
+    public WebElement continueButtonOnNewCustomer;
 
 
 }
