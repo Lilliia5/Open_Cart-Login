@@ -13,7 +13,7 @@ public class Login_Page_POM {
 
     }
 
-    @FindBy(css = "a[title='My Account']")
+    @FindBy(xpath = "//span[text()=\"My Account\"]")
     public WebElement myAccountDropDownMenu;
 
     @FindBy(css = "a[href*='/login']")
@@ -24,7 +24,7 @@ public class Login_Page_POM {
     @FindBy(id = "input-password")
     public WebElement passwordField;
 
-    @FindBy(css = "input[value='Login']")
+    @FindBy(xpath = "//button[text()=\"Login\"]")
     public WebElement loginButton;
 
     @FindBy(css = "div[class*='alert-danger']")
@@ -40,6 +40,13 @@ public class Login_Page_POM {
 
     @FindBy(css = "div[class=\"alert alert-danger alert-dismissible\"]")
     public WebElement alertMessage;
+
+    @FindBy(xpath = "//a[text()=\"Logout\"]")
+    public WebElement logoutButton;
+
+    @FindBy(css = "a[href*=\"logout\"]")
+    public  WebElement logoutButton2;
+
 
 
 }
