@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="4">
+    <test name="Validate the Login page functionality in chrome ">
+        <parameter name="e-mail" value="pavanoltraining@gmail.com"/>
+        <parameter name="password" value="12345"/>
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+    <class name="Tests.OL_53"/>
+        </classes>
+    </test>
+
+
+    <test name="Validate the Login page functionality in firefox">
+        <parameter name="e-mail" value="pavanoltraining@gmail.com"/>
+        <parameter name="password" value="12345"/>
+        <parameter name="browserName" value="firefox"/>
+        <classes>
+            <class name="Tests.OL_53"/>
+        </classes>
+    </test>
+
+    <test name="Validate the Login page functionality in edge">
+        <parameter name="e-mail" value="pavanoltraining@gmail.com"/>
+        <parameter name="password" value="12345"/>
+        <parameter name="browserName" value="edge"/>
+        <classes>
+            <class name="Tests.OL_53"/>
+        </classes>
+    </test>
+
+    <test name="Validate the Login page functionality in safari">
+        <parameter name="e-mail" value="pavanoltraining@gmail.com"/>
+        <parameter name="password" value="12345"/>
+        <parameter name="browserName" value="safari"/>
+        <classes>
+            <class name="Tests.OL_53"/>
+        </classes>
+    </test>
+</suite>

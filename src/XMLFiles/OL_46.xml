@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test  name="Validate E-Mail Address and Password text fields in the Login page have the place holder text ">
+                <classes>
+                    <class name="Tests.OL_46"/>
+                </classes>
+    </test>
+</suite>
